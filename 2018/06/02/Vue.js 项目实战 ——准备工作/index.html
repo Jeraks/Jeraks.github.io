@@ -9,7 +9,7 @@
   <title>Vue.js 项目实战 ——准备工作 | Odd_even的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="写在开始的话 嗨！你们好吗？ 这是我第一次写技术博，决定把之前做的Vue项目的构建写出来，给想学前端框架的入门小伙伴一些参考。网上现在这么多鱼龙混杂的贴，为什么我还要写这个系列呢，首先是想做一个自己学习的总结，其次对于自己学习中遇到的问题，一些容易被大家忽略的点，都拿出来和大家分享。 确实自己也是初学html+js+css+前端框架，当下前端框架和js标准日新月异，所以本文以发布时为准，如有版本">
-<meta name="keywords" content="Vue.js,前端,技术">
+<meta name="keywords" content="技术,前端,Vue.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue.js 项目实战 ——准备工作">
 <meta property="og:url" content="//jeraxcheng.top/2018/06/02/Vue.js 项目实战 ——准备工作/index.html">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="//jeraxcheng.top/assets/blogImg/vue1_1.jpg">
 <meta property="og:image" content="//jeraxcheng.top/assets/blogImg/vue1_2.jpg">
-<meta property="og:updated_time" content="2018-06-02T09:07:31.071Z">
+<meta property="og:updated_time" content="2018-06-02T09:26:14.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue.js 项目实战 ——准备工作">
 <meta name="twitter:description" content="写在开始的话 嗨！你们好吗？ 这是我第一次写技术博，决定把之前做的Vue项目的构建写出来，给想学前端框架的入门小伙伴一些参考。网上现在这么多鱼龙混杂的贴，为什么我还要写这个系列呢，首先是想做一个自己学习的总结，其次对于自己学习中遇到的问题，一些容易被大家忽略的点，都拿出来和大家分享。 确实自己也是初学html+js+css+前端框架，当下前端框架和js标准日新月异，所以本文以发布时为准，如有版本">
@@ -189,7 +189,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 生产环境版本，优化了尺寸和速度 --&gt;</span><br><span class="line">&lt;script src=<span class="string">"https://cdn.jsdelivr.net/npm/vue"</span>&gt;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
 <p>你可以通过上述方法引入Vue.js，来做一些简单的体验，例如：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>My first Vue app<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://unpkg.com/vue"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    &#123;&#123; message &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">      el: <span class="string">'#app'</span>,</span></span><br><span class="line"><span class="undefined">      data: &#123;</span></span><br><span class="line"><span class="javascript">        message: <span class="string">'Hello Vue!'</span></span></span><br><span class="line"><span class="undefined">      &#125;</span></span><br><span class="line"><span class="undefined">    &#125;)</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这样简单的例子比较适合来实用官网中的例子，更容易大家最初的学习，但是我在这里就不再赘述。</p>
+<p>这样简单的例子比较适合来实用官网中的例子，官网中说到：<strong>请注意我们不推荐新手直接使用 <code>vue-cli</code>，尤其是在你还不熟悉基于 Node.js 的构建工具时。</strong> 所以上述方法更容易大家最初的学习，但是我在这里就不再赘述。</p>
 <h3 id="vue-cil构建项目"><a href="#vue-cil构建项目" class="headerlink" title="vue-cil构建项目"></a>vue-cil构建项目</h3><p>vue-cil是vue的脚手架工具。使用npm（需要安装node环境）全局安装webpack，打开命令行工具输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack -g</span><br></pre></td></tr></table></figure>
 <p>安装完成之后输入<strong>webpack -v</strong>，如果出现相应的版本号，则说明安装成功。你也可以实用fusebox，但是这建立在你理解打包器的基础上，所以在这里就不再赘述。</p>
@@ -267,7 +267,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Vue.js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -275,7 +275,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Vue.js</a>
         		</li>
       		
 		</ul>
@@ -476,7 +476,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Vue.js</a>
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -484,7 +484,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技术</a>
+                <a href="javascript:void(0)" class="js-tag color2">Vue.js</a>
               </li>
              
               <li class="article-tag-list-item">
